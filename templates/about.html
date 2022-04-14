@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<!-- <nav>
+    <ul>
+        <li class="logo-text">An Innovative Thinker</li>
+        <li>
+            <ul>
+                <li><a href="#home" class="nav-link">HOME</a></li>
+                <li><a href="#bio" class="nav-link">BIO</a></li>
+                <li><a href="#portfolio" class="nav-link">PORTFOLIO</a></li>
+                <li><a href="#skills" class="nav-link">SKILLS</a></li>
+                <li><a href="#contact" class="nav-link link-button">CONTACT</a></li>
+              </ul>
+        </li>
+    </ul>
+</nav> -->
+<header id="home">
+    <div>
+        <p>
+            Nothing's Tough
+        </p>
+        <h1>Believe in Win-Win Situation</h1>
+    </div>
+</header>
+
+<div class="card mb-3" id="bio">
+    <div class="row g-0">
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='images/Suraj.jpg') }}" class="img-fluid bio-img" alt="...">
+        </div>
+        <div class="col-md-8 col-lg-8">
+            <div class="card-body container-fluid">
+                <h2 class="card-title">SURAJ</h2>
+                <p class="card-text">
+                    I am a Passionate Engineer with a degree in Computer Science and Engineering.
+                    As per my previous experience I worked in IEEE Student Branch as a Web Master.
+                    I am a good team player too as i had worked as a technical co-head in my Departmental Forum.
+                    With my team we developed many Games like Mirror-World, Debugging, Brain Teaser and many more.
+                    Department gave us a chance to build our Departmental Website and within a week we made it.
+                    <span class="break"></span>
+                    As per my knowledge watering and nourishing a plant will return back a beautiful fruits.
+                    I know my limits, I know my creativity. I just want to explore new things.
+
+                    <span class="break"></span>
+                    Worked on Government sites with the company name Shreyas Technosoft Pvt. Ltd. Sites like Recruitment
+                    Portal, <a href="https://greenhydrogen-india.com" target="_">Green Hydrogen</a>(Forum Based Website),
+                    and Eco-campus website for NEERI
+                    I have knowledge of Python, Django and Rest API's.
+
+                    <span class="break"></span>
+                    Worked on Cloud Technologies with the company name Click2Cloud Inc.
+                    I have knowledge of GoLang, Terraform.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+<section id="portfolio">
+    <h3>PORTFOLIO</h3>
+    </section>
+<div style="background-color: black; margin-bottom: 10px;" class="row alert alert-dark row-cols-1 row-cols-md-3 g-4">
+
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">LinkedIn</h5>
+            <p class="card-text my-10">
+                where you will know about my Professional life. (<a
+                    href="https://www.linkedin.com/in/suraj-gupta-977174181/" target="_">Link</a>)</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Hydraulic Transformer</h5>
+            <p class="card-text">
+                Made a Hydraulic transformer in 11th Standard.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">SMA</h5>
+            <p class="card-text">
+                A web application to automate the Society, using this application.
+            </p>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+
+<div class="card mb-3" id="skills">
+    <div class="row g-0">
+        <h3 style="text-align: center;">Technical Skills</h3>
+        <div class="col-md-8 col-lg-8">
+            <div class="card-body container-fluid" id="skills-container">
+                <ul>
+                    <li>Python</li>
+                    <li><progress max="100" value="80"></progress></li>
+                    <li>Go</li>
+                    <li><progress max="100" value="70"></progress></li>
+                    <li>Django</li>
+                    <li><progress max="100" value="80"></progress></li>
+                    <li>HTML</li>
+                    <li><progress max="100" value="90"></progress></li>
+                    <li>CSS</li>
+                    <li><progress max="100" value="90"></progress></li>
+                </ul>
+                <!-- <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div> -->
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer id="contact">
+</footer>
+{% endblock body %}

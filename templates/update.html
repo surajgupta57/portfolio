@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %} Home{% endblock title %} 
+{% block body %}
+
+    <div class="container my-3">
+        <h2>Update Feedback</h2>
+        <form action="/update/{{feedback.sno}}/" method="POST">
+        <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" name="name" id="name" value="{{feedback.name}}" aria-describedby="name"> 
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" value="{{feedback.email}}" name="email" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="mobile_no" class="form-label">Mobile Number</label>
+              <input type="text" class="form-control" name="mobile_no" id="mobile_no" value="{{feedback.mobile_no}}" aria-describedby="mobile_no"> 
+            </div>
+            <div class="mb-3">
+              <label for="title" class="form-label">Title</label>
+              <input type="text" class="form-control" name="title" id="title" value="{{feedback.title}}" aria-describedby="title"> 
+            </div>
+            <div class="mb-3">
+              <label for="desc" class="form-label">Description</label>
+              <input type="text" class="form-control" value="{{feedback.desc}}" name="desc" id="desc">
+            </div>
+            
+            <button type="submit" class="btn btn-dark">Update</button>
+          </form>
+    </div>
+   
+{% endblock body %}
